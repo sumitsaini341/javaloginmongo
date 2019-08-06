@@ -20,7 +20,7 @@
 <?import javafx.scene.text.TextFlow?>
 
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.entryform">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.entryform">
    <children>
       <Pane prefHeight="720.0" prefWidth="582.0" style="-fx-background-color: #313239;">
          <children>
