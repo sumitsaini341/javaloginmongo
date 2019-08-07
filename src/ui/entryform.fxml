@@ -19,7 +19,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.entryform">
    <children>
       <Pane prefHeight="720.0" prefWidth="582.0" style="-fx-background-color: #313239;">
@@ -31,7 +30,7 @@
                         <Font name="Times New Roman Bold" size="19.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="childpic" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </VBox>
             <VBox layoutX="14.0" layoutY="468.0" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;">
@@ -41,31 +40,31 @@
                         <Font name="Times New Roman Bold" size="19.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="agentpic" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </VBox>
-            <TextFlow layoutX="14.0" layoutY="268.0" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #ffff;" textAlignment="JUSTIFY" />
-            <JFXTextField focusColor="#f26623" layoutX="220.0" layoutY="46.0" promptText="Name" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
-            <JFXTextField focusColor="#f26623" layoutX="220.0" layoutY="88.0" promptText="Father's Name" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
-            <JFXTextField focusColor="#f26623" layoutX="220.0" layoutY="131.0" promptText="Name" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
-            <JFXTextField focusColor="#f26623" layoutX="402.0" layoutY="46.0" promptText="E-mail" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
-            <JFXTextField focusColor="#f26623" layoutX="220.0" layoutY="174.0" prefHeight="25.0" prefWidth="319.0" promptText="Address" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
-            <JFXDatePicker defaultColor="#f56262" layoutX="402.0" layoutY="130.0" prefHeight="28.0" prefWidth="135.0" promptText="Date of Birth" style="-fx-background-color: ffffff;" />
-            <JFXTextField focusColor="#f26623" layoutX="220.0" layoutY="221.0" promptText="City" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
-            <JFXTextField focusColor="#f26623" layoutX="402.0" layoutY="221.0" promptText="Zip Code" style="-fx-background-color: ffffff;" unFocusColor="#796c6c"></JFXTextField>
-            <JFXTextArea layoutX="220.0" layoutY="268.0" prefHeight="136.0" prefWidth="319.0" promptText="Remarks" style="-fx-background-color: ffffff;" unFocusColor="#f26623" />
-            <ChoiceBox layoutX="402.0" layoutY="88.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: ffffff;" />
-            <ChoiceBox layoutX="220.0" layoutY="468.0" prefHeight="25.0" prefWidth="319.0" />
+            <TextFlow fx:id="ecount" layoutX="14.0" layoutY="268.0" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #ffff;" textAlignment="JUSTIFY" />
+            <JFXTextField fx:id="cname" focusColor="#f26623" layoutX="220.0" layoutY="46.0" promptText="Name" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextField fx:id="cfname" focusColor="#f26623" layoutX="220.0" layoutY="88.0" promptText="Father's Name" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextField fx:id="cmname" focusColor="#f26623" layoutX="220.0" layoutY="131.0" promptText="Mother's Name" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextField fx:id="cemail" focusColor="#f26623" layoutX="402.0" layoutY="46.0" promptText="E-mail" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextField fx:id="caddress" focusColor="#f26623" layoutX="220.0" layoutY="174.0" prefHeight="25.0" prefWidth="319.0" promptText="Address" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXDatePicker fx:id="dob" defaultColor="#f56262" layoutX="402.0" layoutY="130.0" prefHeight="28.0" prefWidth="135.0" promptText="Date of Birth" style="-fx-background-color: ffffff;" />
+            <JFXTextField fx:id="ccity" focusColor="#f26623" layoutX="220.0" layoutY="221.0" promptText="City" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextField fx:id="zipcode" focusColor="#f26623" layoutX="402.0" layoutY="221.0" promptText="Zip Code" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextArea fx:id="remarks" layoutX="220.0" layoutY="268.0" prefHeight="136.0" prefWidth="319.0" promptText="Remarks" style="-fx-background-color: ffffff;" unFocusColor="#f26623" />
+            <ChoiceBox fx:id="cgender" layoutX="402.0" layoutY="88.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: ffffff;" />
+            <ChoiceBox fx:id="agent" layoutX="220.0" layoutY="468.0" prefHeight="25.0" prefWidth="319.0" />
             <Label layoutX="220.0" layoutY="429.0" text="Left Hand" textFill="WHITE" />
-            <JFXTextField focusColor="#f26623" layoutX="280.0" layoutY="425.0" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: ffffff;" />
+            <JFXTextField fx:id="nlefthand" focusColor="#f26623" layoutX="280.0" layoutY="425.0" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: ffffff;" />
             <Label layoutX="405.0" layoutY="429.0" prefHeight="17.0" prefWidth="70.0" text="Right Hand" textFill="WHITE" />
-            <JFXTextField focusColor="#f26623" layoutX="475.0" layoutY="425.0" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: ffffff;" />
-            <JFXTextField focusColor="#f26623" layoutX="220.0" layoutY="520.0" prefHeight="25.0" prefWidth="319.0" promptText="Address" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
+            <JFXTextField fx:id="nrighthand" focusColor="#f26623" layoutX="475.0" layoutY="425.0" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: ffffff;" />
+            <JFXTextField fx:id="agentcode" focusColor="#f26623" layoutX="220.0" layoutY="520.0" prefHeight="25.0" prefWidth="319.0" promptText="Address" style="-fx-background-color: ffffff;" unFocusColor="#796c6c" />
             <ButtonBar layoutX="238.0" layoutY="590.0" prefHeight="40.0" prefWidth="271.0">
               <buttons>
-                <Button mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
-                  <Button mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
-                  <Button mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
+                <Button fx:id="b1" mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
+                  <Button fx:id="b2" mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
+                  <Button fx:id="b3" mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
               </buttons>
                <padding>
                   <Insets right="15.0" />
@@ -96,23 +95,23 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Thumb" textFill="WHITE" textOverrun="WORD_ELLIPSIS" />
-            <JFXButton prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Index Finger" textFill="WHITE" GridPane.rowIndex="1" />
-            <JFXButton prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Middle Finger" textFill="WHITE" GridPane.rowIndex="2" />
-            <JFXButton prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Ring Finger" textFill="WHITE" GridPane.rowIndex="3" />
-            <JFXButton prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Pinky Finger" textFill="WHITE" GridPane.rowIndex="4" />
-            <JFXButton prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Thumb" textFill="WHITE" GridPane.columnIndex="1" />
-            <JFXButton prefWidth="90.0" style="-fx-background-color: #313239;" text="Index Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton prefWidth="90.0" style="-fx-background-color: #313239;" text="Middle Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton prefWidth="90.0" style="-fx-background-color: #313239;" text="Ring Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <JFXButton prefWidth="90.0" style="-fx-background-color: #313239;" text="Pinky Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <JFXButton fx:id="lthumb" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Thumb" textFill="WHITE" textOverrun="WORD_ELLIPSIS" />
+            <JFXButton fx:id="lindex" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Index Finger" textFill="WHITE" GridPane.rowIndex="1" />
+            <JFXButton fx:id="lmiddle" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Middle Finger" textFill="WHITE" GridPane.rowIndex="2" />
+            <JFXButton fx:id="lring" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Ring Finger" textFill="WHITE" GridPane.rowIndex="3" />
+            <JFXButton fx:id="lpinky" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Pinky Finger" textFill="WHITE" GridPane.rowIndex="4" />
+            <JFXButton fx:id="rthumb" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #313239;" text="Thumb" textFill="WHITE" GridPane.columnIndex="1" />
+            <JFXButton fx:id="rindex" prefWidth="90.0" style="-fx-background-color: #313239;" text="Index Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="rmiddle" prefWidth="90.0" style="-fx-background-color: #313239;" text="Middle Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="rring" prefWidth="90.0" style="-fx-background-color: #313239;" text="Ring Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXButton fx:id="rpinky" prefWidth="90.0" style="-fx-background-color: #313239;" text="Pinky Finger" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
       <ButtonBar layoutX="677.0" layoutY="588.0" prefHeight="40.0" prefWidth="271.0">
          <buttons>
-            <Button mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
-            <Button mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
-            <Button mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
+            <Button fx:id="b4" mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
+            <Button fx:id="b5" mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
+            <Button fx:id="b6" mnemonicParsing="false" style="-fx-background-color: #F5812A;" text="Button" />
          </buttons>
          <padding>
             <Insets right="15.0" />
